@@ -27,29 +27,31 @@ function showDivs(k) {
 
 // auto slide
 setInterval(() => {
-    nextSlide(1);
-  }, 5000);
+  nextSlide(1);
+}, 5000);
 
 // form Validation
-let destination = document.getElementById('destination');
+let destination = document.getElementById("destination");
 function validateForm() {
   let inputName = document.forms["form-contact"]["full-name"];
   let inputEmail = document.forms["form-contact"]["email-user"];
   console.log("destination" + destination.value);
-  if (inputName.value == "" && inputEmail.value == "" && destination.value =="") {
-    inputEmail.style.border = '1px solid red';
-    inputName.style.border = '1px solid red';
-    destination.style.border = '1px solid red';
+  if (
+    inputName.value == "" &&
+    inputEmail.value == "" &&
+    destination.value == ""
+  ) {
+    inputEmail.style.border = "1px solid red";
+    inputName.style.border = "1px solid red";
+    destination.style.border = "1px solid red";
     alert("Please Fill The Blank");
-  }else if(inputEmail.value =="" && inputName.value!=null){
-    inputEmail.style.border = '1px solid red';
+  } else if (inputEmail.value == "" && inputName.value != null) {
+    inputEmail.style.border = "1px solid red";
     alert("Please Fill Your Email");
-
-  }else if(inputEmail.value != "" && inputName.value == ""){
-    inputName.style.border = '1px solid red';
+  } else if (inputEmail.value != "" && inputName.value == "") {
+    inputName.style.border = "1px solid red";
     alert("Please Fill Your Name");
-
-  }else{
+  } else {
     alert("Thank You, our team will contact you soon");
   }
 }
