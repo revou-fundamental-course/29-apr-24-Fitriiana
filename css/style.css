@@ -72,7 +72,7 @@
 }
 body {
   font-family: "Nunito", monospace;
-  background-image: url("./assets/bg.jpeg");
+  background-image: url("../assets/bg.jpeg");
   background-size: cover; /* Cover the entire viewport */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
